@@ -798,7 +798,7 @@ LeaAce = {
             var aceEditor = ace.edit(id);
 
             aceEditor.container.style.lineHeight = 1.5;
-            aceEditor.setTheme("ace/theme/tomorrow");
+            aceEditor.setTheme("ace/theme/textmate");
 
             var brush = me.getPreBrush($pre);
             var b = "";

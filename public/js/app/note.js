@@ -838,7 +838,7 @@ Note.changeNote = function(selectNoteId, isShare, needSaveChanged, callback) {
         }
         // 把其它信息也带上
         ret = Note.cache[selectNoteId]
-        Note.renderNoteContent(ret, false, seq2);
+        Note.renderNoteContent(ret, true, seq2);
 
         self.hideContentLoading();
 
