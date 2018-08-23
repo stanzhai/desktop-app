@@ -1889,13 +1889,6 @@ var Pren = {
     }
 };
 
-// 升级
-function checkForUpdates() {
-    if (Upgrade.checkForUpdates) {
-        Upgrade.checkForUpdates();
-    }
-};
-
 function setMacTopMenu() {
     var isMac_ = isMac();
     var template = [{
@@ -2138,13 +2131,6 @@ function userMenu(allUsers) {
             submenu: getToggleUserMenus(allUsers)
         });
 
-        this.checkForUpdates = new gui.MenuItem({
-            label: getMsg('Check for updates'),
-            click: function(e) {
-                checkForUpdates();
-            }
-        });
-
         this.debug = new gui.MenuItem({
             label: getMsg('Toggle DevTools'),
             click: function(e) {
@@ -2193,9 +2179,6 @@ function userMenu(allUsers) {
 
             height += 90;
         }
-
-        this.menu.append(new gui.MenuItem({ type: 'separator' }));
-        this.menu.append(this.checkForUpdates);
 
         this.menu.append(new gui.MenuItem({ type: 'separator' }));
 

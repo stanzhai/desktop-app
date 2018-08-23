@@ -22,7 +22,7 @@ var Mobile = {}; // 手机端处理
 var LeaAce = {};
 var Upgrade = {
 	checkForUpdates: function () {
-		Notify.show({title: 'Info', body: getMsg('Network error!')});
+		//Notify.show({title: 'Info', body: getMsg('Network error!')});
 	}
 };
 
